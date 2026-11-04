@@ -1,0 +1,49 @@
+{
+  "final_execution": false,
+  "history": {
+    "index_rows": 3147,
+    "saved_exploratory_battle_logs": 122,
+    "counts_by_scope": {
+      "component_or_survey_data_not_full_game": 113,
+      "nonformal_search_or_diagnostic": 122,
+      "S_v2_stage_attempt": 1591,
+      "S_route_logical_summary": 943,
+      "S_v2_stage_attempt_without_saved_receipt": 4,
+      "S_v1_uniformly_rejected_stage_attempt": 49,
+      "S_v1_rejected_logical_route": 33,
+      "S_v1_uniformly_rejected_stage_attempt_without_saved_receipt": 4,
+      "C_nonformal_native_training_or_smoke": 6,
+      "C_nonformal_preparation_attempt": 6,
+      "C_preparation_event_evidence_not_additional_run": 12,
+      "process_log_evidence_not_additional_run": 264
+    },
+    "index": "全部尝试与失败流程索引.csv",
+    "narrative": "实验过程与全部尝试.md",
+    "unretained_transient_commands": "not_reconstructable"
+  },
+  "policy": {
+    "manual": "G0固定策略操作手册.md",
+    "exact_order_file": "G0固定布局逐项操作.csv",
+    "exact_order_rows": 1672,
+    "plans_are_not_completed_builds": true
+  },
+  "source": {
+    "native_tracked_files": 26,
+    "added_native_files": 2,
+    "methods": "源码改动、数据来源与公式.md",
+    "modifications": "原生源码修改位置.csv",
+    "real_native_engine": true,
+    "new_player_recorder_and_statistics_code": true,
+    "untouched_official_binary": false
+  },
+  "code": {
+    "saved_source_paths": 6253,
+    "distinct_source_contents": 142,
+    "catalogue": "全部脚本与源码清单.csv",
+    "code_book": "全部脚本代码.md",
+    "index": "全部脚本索引.md"
+  },
+  "accounting_file": "项目耗时与成本.json",
+  "accounting_as_of": "2026-11-04T14:42:09.797357+08:00",
+  "tokens_and_monetary_costs_available": false
+}

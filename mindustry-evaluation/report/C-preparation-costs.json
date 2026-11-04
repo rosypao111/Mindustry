@@ -1,0 +1,203 @@
+{
+  "formal_samples_added": 0,
+  "one_common_history_not_40_observations": true,
+  "canonical_history": [
+    {
+      "sector": "groundZero",
+      "artifact": "campaign-preparation/attempt2/groundZero-events.csv",
+      "through_seq": null
+    },
+    {
+      "sector": "frozenForest",
+      "artifact": "campaign-preparation/frozenForest/attempt1.events.csv",
+      "through_seq": null
+    },
+    {
+      "sector": "crateredBattleground",
+      "artifact": "campaign-preparation/crateredBattleground/attempt3.events.csv",
+      "through_seq": null
+    },
+    {
+      "sector": "biomassFacility",
+      "artifact": "campaign-preparation/biomassFacility/attempt1.events.csv",
+      "through_seq": 15900
+    },
+    {
+      "sector": "biomassFacility",
+      "artifact": "campaign-preparation/biomassFacility/attempt2.events.csv",
+      "through_seq": null
+    },
+    {
+      "sector": "ruinousShores",
+      "artifact": "campaign-preparation/ruinousShores/attempt4.events.csv",
+      "through_seq": null
+    }
+  ],
+  "completed_prerequisites": [
+    "groundZero",
+    "frozenForest",
+    "crateredBattleground",
+    "biomassFacility"
+  ],
+  "excluded_histories": [
+    "failed groundZero first attempt",
+    "crateredBattleground attempts1/2 with inconsistent interrupted world/settings pair",
+    "independent smoke/training profiles",
+    "interrupted preparation event tails after the committed recovery checkpoint",
+    "ruinousShores attempts1/2/3: genuine native defeats; attempt4 starts from the same complete Bio checkpoint"
+  ],
+  "sources": [
+    {
+      "sector": "groundZero",
+      "path": "campaign-preparation/attempt2/groundZero-events.csv",
+      "through_seq": null,
+      "sha256": "232317341255a70136ee482601a9f38b7ef634240ba725290797d52b26201e79"
+    },
+    {
+      "sector": "frozenForest",
+      "path": "campaign-preparation/frozenForest/attempt1.events.csv",
+      "through_seq": null,
+      "sha256": "3dbee7a4f6c76101cf1180a3aa94d55b87611f1dac5c167038ee75c19d2bb49b"
+    },
+    {
+      "sector": "crateredBattleground",
+      "path": "campaign-preparation/crateredBattleground/attempt3.events.csv",
+      "through_seq": null,
+      "sha256": "f0dccfb3b5d8539e572864d60e6774d1b3b79c1b1f1ba59d39a639a135cc62a2"
+    },
+    {
+      "sector": "biomassFacility",
+      "path": "campaign-preparation/biomassFacility/attempt1.events.csv",
+      "through_seq": 15900,
+      "sha256": "8fcf2a8e6f305374d087047c95208be5a81731a070f4687ef8decd4bd37bdd63"
+    },
+    {
+      "sector": "biomassFacility",
+      "path": "campaign-preparation/biomassFacility/attempt2.events.csv",
+      "through_seq": null,
+      "sha256": "d3c0ac2762f2273ed534c4c89e8c6f13a80bcbfba0ca0285eb6c8e99632f28f3"
+    },
+    {
+      "sector": "ruinousShores",
+      "path": "campaign-preparation/ruinousShores/attempt4.events.csv",
+      "through_seq": null,
+      "sha256": "d7e1de3262ce7183280b1a5b9d3456afe3207c28536f3d43431b9ba17b4d72be"
+    }
+  ],
+  "payment_totals": [
+    {
+      "event": "native_completed_research_total",
+      "item": "copper",
+      "source_debit": 4500,
+      "consumed_cost": 4500,
+      "carried_resources": 0
+    },
+    {
+      "event": "native_completed_research_total",
+      "item": "lead",
+      "source_debit": 3500,
+      "consumed_cost": 3500,
+      "carried_resources": 0
+    },
+    {
+      "event": "native_launch_debit_receipt",
+      "item": "coal",
+      "source_debit": 3034,
+      "consumed_cost": 0,
+      "carried_resources": 3034
+    },
+    {
+      "event": "native_launch_debit_receipt",
+      "item": "copper",
+      "source_debit": 12000,
+      "consumed_cost": 4000,
+      "carried_resources": 8000
+    },
+    {
+      "event": "native_launch_debit_receipt",
+      "item": "graphite",
+      "source_debit": 2843,
+      "consumed_cost": 0,
+      "carried_resources": 2843
+    },
+    {
+      "event": "native_launch_debit_receipt",
+      "item": "lead",
+      "source_debit": 10471,
+      "consumed_cost": 3200,
+      "carried_resources": 7271
+    },
+    {
+      "event": "native_launch_debit_receipt",
+      "item": "metaglass",
+      "source_debit": 1000,
+      "consumed_cost": 0,
+      "carried_resources": 1000
+    },
+    {
+      "event": "native_launch_debit_receipt",
+      "item": "sand",
+      "source_debit": 2300,
+      "consumed_cost": 0,
+      "carried_resources": 2300
+    },
+    {
+      "event": "native_launch_debit_receipt",
+      "item": "silicon",
+      "source_debit": 4000,
+      "consumed_cost": 0,
+      "carried_resources": 4000
+    },
+    {
+      "event": "native_research_payment",
+      "item": "copper",
+      "source_debit": 585,
+      "consumed_cost": 585,
+      "carried_resources": 0
+    },
+    {
+      "event": "native_research_payment",
+      "item": "lead",
+      "source_debit": 270,
+      "consumed_cost": 270,
+      "carried_resources": 0
+    },
+    {
+      "event": "native_research_source_receipt",
+      "item": "copper",
+      "source_debit": 5900,
+      "consumed_cost": 5900,
+      "carried_resources": 0
+    },
+    {
+      "event": "native_research_source_receipt",
+      "item": "graphite",
+      "source_debit": 2400,
+      "consumed_cost": 2400,
+      "carried_resources": 0
+    },
+    {
+      "event": "native_research_source_receipt",
+      "item": "lead",
+      "source_debit": 2800,
+      "consumed_cost": 2800,
+      "carried_resources": 0
+    },
+    {
+      "event": "native_research_source_receipt",
+      "item": "metaglass",
+      "source_debit": 300,
+      "consumed_cost": 300,
+      "carried_resources": 0
+    },
+    {
+      "event": "native_research_source_receipt",
+      "item": "silicon",
+      "source_debit": 900,
+      "consumed_cost": 900,
+      "carried_resources": 0
+    }
+  ],
+  "launch_transport_not_counted_as_consumption": true,
+  "limitation": "Frozen Forest v1 research has total full-affordability and native unlock evidence but no per-source split; all later research and formal routes retain actual source-debit receipts"
+}

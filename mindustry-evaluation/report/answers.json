@@ -1,0 +1,160 @@
+{
+  "status": "in_progress",
+  "formal_valid_routes": 943,
+  "formal_invalid_routes": 0,
+  "formal_valid_stages": 1415,
+  "source": "frozen/S-v2",
+  "Q1": {
+    "stage_statistics": "stage_summary_statistics.csv",
+    "eta": "industrial_eta.csv",
+    "conclusion": "见评测分析报告与verdicts.json；阶段到达数、零批次和缺失输入分别处理"
+  },
+  "Q2": {
+    "milestones": "milestones.csv",
+    "paired_advances": "paired_milestone_advances_minutes.csv"
+  },
+  "Q3": {
+    "window_statistics": "window_summary_statistics.csv",
+    "raw": "5分钟窗口日志.csv"
+  },
+  "Q4": {
+    "operations": "operations.csv"
+  },
+  "Q5": {
+    "scan": "pressure.csv",
+    "boundaries": [
+      {
+        "policy": "balanced",
+        "group": "G0",
+        "all_21_cells_complete": false,
+        "continuous_boundary_determined": true,
+        "continuous_boundary": null,
+        "boundary_is_lower_bound": false,
+        "any_passing_maximum": null,
+        "any_passing_maximum_determined": false,
+        "interpretation": "empty: complete 20-seed alpha0 cell below90%; full scan continues for maximum-anywhere"
+      },
+      {
+        "policy": "balanced",
+        "group": "G1",
+        "all_21_cells_complete": false,
+        "continuous_boundary_determined": true,
+        "continuous_boundary": null,
+        "boundary_is_lower_bound": false,
+        "any_passing_maximum": null,
+        "any_passing_maximum_determined": false,
+        "interpretation": "empty: complete 20-seed alpha0 cell below90%; full scan continues for maximum-anywhere"
+      },
+      {
+        "policy": "balanced",
+        "group": "G2",
+        "all_21_cells_complete": false,
+        "continuous_boundary_determined": true,
+        "continuous_boundary": null,
+        "boundary_is_lower_bound": false,
+        "any_passing_maximum": null,
+        "any_passing_maximum_determined": false,
+        "interpretation": "empty: complete 20-seed alpha0 cell below90%; full scan continues for maximum-anywhere"
+      },
+      {
+        "policy": "balanced",
+        "group": "G3",
+        "all_21_cells_complete": false,
+        "continuous_boundary_determined": true,
+        "continuous_boundary": null,
+        "boundary_is_lower_bound": false,
+        "any_passing_maximum": null,
+        "any_passing_maximum_determined": false,
+        "interpretation": "empty: complete 20-seed alpha0 cell below90%; full scan continues for maximum-anywhere"
+      },
+      {
+        "policy": "defensive",
+        "group": "G0",
+        "all_21_cells_complete": false,
+        "continuous_boundary_determined": true,
+        "continuous_boundary": null,
+        "boundary_is_lower_bound": false,
+        "any_passing_maximum": null,
+        "any_passing_maximum_determined": false,
+        "interpretation": "empty: complete 20-seed alpha0 cell below90%; full scan continues for maximum-anywhere"
+      },
+      {
+        "policy": "defensive",
+        "group": "G1",
+        "all_21_cells_complete": false,
+        "continuous_boundary_determined": true,
+        "continuous_boundary": null,
+        "boundary_is_lower_bound": false,
+        "any_passing_maximum": null,
+        "any_passing_maximum_determined": false,
+        "interpretation": "empty: complete 20-seed alpha0 cell below90%; full scan continues for maximum-anywhere"
+      },
+      {
+        "policy": "defensive",
+        "group": "G2",
+        "all_21_cells_complete": false,
+        "continuous_boundary_determined": true,
+        "continuous_boundary": null,
+        "boundary_is_lower_bound": false,
+        "any_passing_maximum": null,
+        "any_passing_maximum_determined": false,
+        "interpretation": "empty: complete 20-seed alpha0 cell below90%; full scan continues for maximum-anywhere"
+      },
+      {
+        "policy": "defensive",
+        "group": "G3",
+        "all_21_cells_complete": false,
+        "continuous_boundary_determined": true,
+        "continuous_boundary": null,
+        "boundary_is_lower_bound": false,
+        "any_passing_maximum": null,
+        "any_passing_maximum_determined": false,
+        "interpretation": "empty: complete 20-seed alpha0 cell below90%; full scan continues for maximum-anywhere"
+      }
+    ]
+  },
+  "decision": "正式执行尚在进行；未齐单元不作最终推断",
+  "confidence": "Wilson95% for proportions; paired-seed percentile bootstrap2000 draws for differences; no subjective difficulty inference",
+  "calibration_C": {
+    "handled": 0,
+    "valid": 0,
+    "required": 40,
+    "separate_analysis": "C-calibration.json"
+  },
+  "track_G": {
+    "track": "G",
+    "status": "protocol_not_applicable",
+    "user_resolution": "严格保持原生区块尺寸，将 G 轨道记为协议不适用",
+    "native_serpulo_sectors": 272,
+    "size_counts": {
+      "334": 12,
+      "414": 60,
+      "418": 60,
+      "430": 60,
+      "432": 20,
+      "440": 60
+    },
+    "required_size": 192,
+    "eligible_sectors": 0,
+    "evidence": [
+      "results/native-sector-dimensions.csv",
+      "logs/native-sector-dimensions.log",
+      "src/GenerateSector.java"
+    ],
+    "formal_runs": 0,
+    "no_resized_substitute": true,
+    "size_measurement": "Sector.getSize(): native planet generator dimensions; preset map actual dimensions are separate",
+    "nonpreset_sectors": 194,
+    "nonpreset_native_size_counts": {
+      "334": 10,
+      "432": 12,
+      "430": 47,
+      "418": 47,
+      "440": 39,
+      "414": 39
+    },
+    "nonpreset_192_sectors": 0
+  },
+  "invalids": [],
+  "final_report_complete": false
+}

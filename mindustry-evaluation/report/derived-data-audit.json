@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "formal_routes": 724,
+  "formal_stages": 1108,
+  "windows_reconciled": 13436,
+  "unique_native_spawn_point_rows": 280860,
+  "checks": [
+    "unique independent seeds",
+    "route success numerator/denominator",
+    "equal-run RMCT",
+    "20-seed pressure subset without alpha0 duplication",
+    "native rounded pressure formula with Java float precision",
+    "boss/zero preservation and actual per-point spawns",
+    "facility supply totals",
+    "downtime totals",
+    "energy totals",
+    "actual rebuild item weights"
+  ]
+}

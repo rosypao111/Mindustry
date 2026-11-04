@@ -1,0 +1,8 @@
+{
+  "technical_invalid_attempts": 12,
+  "same_seed_successful_retries": 12,
+  "pending_retries": 0,
+  "exhausted_attempt_rows": 0,
+  "uniformly_rejected_version_route_directories": 37,
+  "all_rejected_version_data_excluded": true
+}

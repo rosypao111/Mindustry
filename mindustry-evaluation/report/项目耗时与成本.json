@@ -1,0 +1,118 @@
+{
+  "as_of": "2026-11-04T14:42:09.797357+08:00",
+  "exact_project_start": null,
+  "exact_total_active_work_seconds": null,
+  "earliest_visible_log": {
+    "earliest_retained_log": "logs/build.log",
+    "earliest_retained_log_mtime_utc": "2026-11-02T09:29:40.196938+00:00",
+    "earliest_log_sha256_at_recording": "e8755b929c61459a2b5e8df8ebbd220ab5e7983949118cc7d32b0905c30a47f7",
+    "exact_conversation_start_unavailable": true,
+    "provenance": "Retained task log filesystem timestamp; not a user-session start or active-labor measurement"
+  },
+  "visible_elapsed_span_seconds": 162749.600419,
+  "visible_elapsed_includes_idle_pauses_and_parallel_work": true,
+  "experiment_execution_complete": false,
+  "full_project_costs_recoverable": false,
+  "runtime_observed_window": {
+    "scope": "Only this experiment Docker cgroup since its current creation; excludes earlier host execution and other tool/model work",
+    "observed_at": "2026-11-04T13:28:26.933047+08:00",
+    "container_started_at": "2026-11-04T02:17:50.487185788Z",
+    "container_hostname": "47d94cb82a21",
+    "cpu_stat": {
+      "usage_usec": 44639631478,
+      "user_usec": 44231950519,
+      "system_usec": 407680958,
+      "nice_usec": 0,
+      "nr_periods": 112387,
+      "nr_throttled": 95268,
+      "throttled_usec": 1142692726,
+      "nr_bursts": 0,
+      "burst_usec": 0
+    },
+    "cpu_core_seconds": 44639.631478,
+    "cpu_core_hours": 12.399897632777778,
+    "memory_peak_bytes": 5267111936,
+    "cpu_max": "400000 100000",
+    "memory_max_bytes": 27917287424,
+    "full_project_CPU_total": false,
+    "monetary_cost_not_inferred_from_resource_counters": true
+  },
+  "recorded_attempt_wall_by_scope": {
+    "nonformal_search_or_diagnostic": {
+      "recorded_attempts": 122,
+      "attempts_with_wall": 119,
+      "recorded_wall_seconds": 5074.9881713820005
+    },
+    "S_v2_stage_attempt": {
+      "recorded_attempts": 1591,
+      "attempts_with_wall": 1419,
+      "recorded_wall_seconds": 158788.73407387733
+    },
+    "S_v1_uniformly_rejected_stage_attempt": {
+      "recorded_attempts": 49,
+      "attempts_with_wall": 49,
+      "recorded_wall_seconds": 5100.333943843842
+    },
+    "C_nonformal_native_training_or_smoke": {
+      "recorded_attempts": 6,
+      "attempts_with_wall": 6,
+      "recorded_wall_seconds": 6755.885894268
+    },
+    "C_nonformal_preparation_attempt": {
+      "recorded_attempts": 6,
+      "attempts_with_wall": 6,
+      "recorded_wall_seconds": 25689.941750324
+    }
+  },
+  "summing_concurrent_wall_is_not_project_elapsed_or_CPU": true,
+  "current_saved_data_by_directory": {
+    "formal": {
+      "files": 30333,
+      "bytes": 1028502001
+    },
+    "formal-rejected-v1": {
+      "files": 1095,
+      "bytes": 52826215
+    },
+    "results": {
+      "files": 1417,
+      "bytes": 670939797
+    },
+    "campaign-preparation": {
+      "files": 8532,
+      "bytes": 434624379
+    },
+    "training": {
+      "files": 190,
+      "bytes": 88254456
+    },
+    "frozen": {
+      "files": 82,
+      "bytes": 39567348
+    },
+    "logs": {
+      "files": 264,
+      "bytes": 1334902
+    }
+  },
+  "input_tokens": null,
+  "cached_input_tokens": null,
+  "output_tokens": null,
+  "reasoning_tokens": null,
+  "all_model_tokens_total": null,
+  "model_cost": null,
+  "cloud_cost": null,
+  "storage_cost": null,
+  "network_cost": null,
+  "grand_total_monetary_cost": null,
+  "currency": null,
+  "billing_status": "Not available: no project-wide model usage/billing or cloud price invoice is exposed by the connected tools or saved project records",
+  "token_numbers_not_estimated_from_words_or_tool_output_counts": true,
+  "limitations": [
+    "Before-container CPU and earlier model/tool execution not metered here",
+    "File timestamp span is not exact session start, human labor or active simulation duration",
+    "Per-attempt wall clocks differ in scope, may overlap, and do not include every discarded/interrupted process",
+    "Current cgroup CPU does not include future archive compression; packaging adds a separately timed receipt",
+    "No monetary totals are inferred from absent rates or unexposed billing data"
+  ]
+}

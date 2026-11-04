@@ -1,0 +1,350 @@
+{
+  "balanced": {
+    "industrial_gain_timing": {
+      "status": "证据不足",
+      "reason": "存在无批次或未到达阶段，η不可计算，按题目禁止判定收益在中后期显现",
+      "evidence": {
+        "eta": {
+          "A": {
+            "policy": "balanced",
+            "stage": "A",
+            "eta": "0.009750774783250815",
+            "G0_rmct_runs": "30",
+            "G1_rmct_runs": "30",
+            "interpretation": "observed-stage mean; consult paired/censor sensitivity"
+          },
+          "B": {
+            "policy": "balanced",
+            "stage": "B",
+            "eta": "0.004718920634785406",
+            "G0_rmct_runs": "8",
+            "G1_rmct_runs": "12",
+            "interpretation": "observed-stage mean; consult paired/censor sensitivity"
+          },
+          "C": {
+            "policy": "balanced",
+            "stage": "C",
+            "eta": "",
+            "G0_rmct_runs": "0",
+            "G1_rmct_runs": "0",
+            "interpretation": "不可计算：无批次或尚无到达数据"
+          }
+        }
+      }
+    },
+    "opening_industrial_penalty": {
+      "status": "不成立",
+      "reason": "G1电网满足率<0.85且失守率高于G0",
+      "evidence": {
+        "G1_power": 0.8605631988031348,
+        "G0_core_loss": 0.7333333333333333,
+        "G1_core_loss": 0.6
+      }
+    },
+    "construction_solves_war": {
+      "status": "证据不足",
+      "reason": "保守地要求实际贡献配对达到30；题目原文的30是每组路线数，未单列达成者最低配对数。稀少达成者的条件均值不外推全路线，另列点阈值敏感性",
+      "evidence": {
+        "advances": {
+          "army_formed": {
+            "real_pairs": 4,
+            "G1_advance_minutes": 2.8838194444444376
+          },
+          "first_enemy_core": {
+            "real_pairs": 4,
+            "G1_advance_minutes": 2.8792361111111022
+          },
+          "salvo_combat": {
+            "real_pairs": 24,
+            "G1_advance_minutes": 2.8834259259259265
+          }
+        },
+        "point_rule_sensitivity": {
+          "per_group_30_route_minimum_met": true,
+          "actual_achiever_minimum_not_separately_specified_in_document": true,
+          "actual_paired_contributing_counts": {
+            "army_formed": 4,
+            "first_enemy_core": 4,
+            "salvo_combat": 24
+          },
+          "all_three_point_advances_at_least_3_minutes": false,
+          "completion_noninferiority_point_condition": true,
+          "point_thresholds_met": false,
+          "interpretation": "Post hoc rule-interpretation sensitivity: route sample size versus contributing-achiever sample size; conditional point estimates only, not a replacement for the conservative primary judgment"
+        }
+      }
+    },
+    "benign_rescue_burden": {
+      "A-G1": {
+        "status": "不成立",
+        "reason": "按绝对重建时间下降30%、缺弹时间下降40%判断；不同存活暴露时长另行解释",
+        "evidence": {
+          "rebuild_change": 0.12925545738045896,
+          "empty_change": -0.17234159471992194
+        }
+      },
+      "A-G3": {
+        "status": "不成立",
+        "reason": "按绝对重建时间下降30%、缺弹时间下降40%判断；不同存活暴露时长另行解释",
+        "evidence": {
+          "rebuild_change": 0.15165345634095795,
+          "empty_change": -0.03700506614791477
+        }
+      },
+      "B-G1": {
+        "status": "证据不足",
+        "reason": "阶段有效到达种子不足30",
+        "evidence": {}
+      },
+      "B-G3": {
+        "status": "证据不足",
+        "reason": "阶段有效到达种子不足30",
+        "evidence": {}
+      },
+      "C-G1": {
+        "status": "证据不足",
+        "reason": "阶段有效到达种子不足30",
+        "evidence": {}
+      },
+      "C-G3": {
+        "status": "证据不足",
+        "reason": "阶段有效到达种子不足30",
+        "evidence": {}
+      }
+    },
+    "malign_rescue_burden": {
+      "A": {
+        "status": "成立",
+        "reason": "G2重建当量与时间同时增加，或G1缺电/堵塞的配对95%区间支持增加；未作多重检验校正",
+        "evidence": {
+          "tests": [
+            {
+              "test": "G2_rebuild_cost_and_time",
+              "passed": true,
+              "G0_equivalent": 2001.28,
+              "G2_equivalent": 2073.8766666666666,
+              "G0_seconds": 68.40888888888934,
+              "G2_seconds": 70.46000000000035
+            },
+            {
+              "test": "G1_increase_power_loss_seconds",
+              "passed": true,
+              "G0_minus_G1_ci_low": -322.7430138889108,
+              "G0_minus_G1_ci_high": -187.825569444407,
+              "pairs": 30
+            },
+            {
+              "test": "G1_increase_blocked_seconds",
+              "passed": true,
+              "G0_minus_G1_ci_low": -10725.89320832805,
+              "G0_minus_G1_ci_high": -8372.461916652199,
+              "pairs": 30
+            }
+          ],
+          "missing": []
+        }
+      },
+      "B": {
+        "status": "证据不足",
+        "reason": "G2重建当量与时间同时增加，或G1缺电/堵塞的配对95%区间支持增加；未作多重检验校正",
+        "evidence": {
+          "tests": [],
+          "missing": [
+            "G2/G0 stage sample size",
+            "G1/G0 stage sample size"
+          ]
+        }
+      },
+      "C": {
+        "status": "证据不足",
+        "reason": "G2重建当量与时间同时增加，或G1缺电/堵塞的配对95%区间支持增加；未作多重检验校正",
+        "evidence": {
+          "tests": [],
+          "missing": [
+            "G2/G0 stage sample size",
+            "G1/G0 stage sample size"
+          ]
+        }
+      }
+    },
+    "synergy": {
+      "status": "证据不足",
+      "reason": "G1/G2/G3全21档、每档20个有效种子的扫描尚未完成",
+      "evidence": {}
+    }
+  },
+  "defensive": {
+    "industrial_gain_timing": {
+      "status": "证据不足",
+      "reason": "阶段到达样本不足，保留条件均值，不外推路线总体",
+      "evidence": {
+        "eta": {
+          "A": {
+            "policy": "defensive",
+            "stage": "A",
+            "eta": "0.00655008277010416",
+            "G0_rmct_runs": "30",
+            "G1_rmct_runs": "30",
+            "interpretation": "observed-stage mean; consult paired/censor sensitivity"
+          },
+          "B": {
+            "policy": "defensive",
+            "stage": "B",
+            "eta": "-0.0004603087061048061",
+            "G0_rmct_runs": "4",
+            "G1_rmct_runs": "12",
+            "interpretation": "observed-stage mean; consult paired/censor sensitivity"
+          },
+          "C": {
+            "policy": "defensive",
+            "stage": "C",
+            "eta": "0.023212742313866053",
+            "G0_rmct_runs": "4",
+            "G1_rmct_runs": "12",
+            "interpretation": "observed-stage mean; consult paired/censor sensitivity"
+          }
+        }
+      }
+    },
+    "opening_industrial_penalty": {
+      "status": "不成立",
+      "reason": "G1电网满足率<0.85且失守率高于G0",
+      "evidence": {
+        "G1_power": 0.8577156969758397,
+        "G0_core_loss": 0.8666666666666667,
+        "G1_core_loss": 0.6
+      }
+    },
+    "construction_solves_war": {
+      "status": "证据不足",
+      "reason": "保守地要求实际贡献配对达到30；题目原文的30是每组路线数，未单列达成者最低配对数。稀少达成者的条件均值不外推全路线，另列点阈值敏感性",
+      "evidence": {
+        "advances": {
+          "army_formed": {
+            "real_pairs": 3,
+            "G1_advance_minutes": 2.955092592592589
+          },
+          "first_enemy_core": {
+            "real_pairs": 3,
+            "G1_advance_minutes": 2.9912962962963014
+          },
+          "salvo_combat": {
+            "real_pairs": 26,
+            "G1_advance_minutes": 3.0477564102564108
+          }
+        },
+        "point_rule_sensitivity": {
+          "per_group_30_route_minimum_met": true,
+          "actual_achiever_minimum_not_separately_specified_in_document": true,
+          "actual_paired_contributing_counts": {
+            "army_formed": 3,
+            "first_enemy_core": 3,
+            "salvo_combat": 26
+          },
+          "all_three_point_advances_at_least_3_minutes": false,
+          "completion_noninferiority_point_condition": true,
+          "point_thresholds_met": false,
+          "interpretation": "Post hoc rule-interpretation sensitivity: route sample size versus contributing-achiever sample size; conditional point estimates only, not a replacement for the conservative primary judgment"
+        }
+      }
+    },
+    "benign_rescue_burden": {
+      "A-G1": {
+        "status": "不成立",
+        "reason": "按绝对重建时间下降30%、缺弹时间下降40%判断；不同存活暴露时长另行解释",
+        "evidence": {
+          "rebuild_change": 0.2348122748683883,
+          "empty_change": -0.20258795949569397
+        }
+      },
+      "A-G3": {
+        "status": "不成立",
+        "reason": "按绝对重建时间下降30%、缺弹时间下降40%判断；不同存活暴露时长另行解释",
+        "evidence": {
+          "rebuild_change": 0.19574328068717461,
+          "empty_change": -0.07804611008037543
+        }
+      },
+      "B-G1": {
+        "status": "证据不足",
+        "reason": "阶段有效到达种子不足30",
+        "evidence": {}
+      },
+      "B-G3": {
+        "status": "证据不足",
+        "reason": "阶段有效到达种子不足30",
+        "evidence": {}
+      },
+      "C-G1": {
+        "status": "证据不足",
+        "reason": "阶段有效到达种子不足30",
+        "evidence": {}
+      },
+      "C-G3": {
+        "status": "证据不足",
+        "reason": "阶段有效到达种子不足30",
+        "evidence": {}
+      }
+    },
+    "malign_rescue_burden": {
+      "A": {
+        "status": "成立",
+        "reason": "G2重建当量与时间同时增加，或G1缺电/堵塞的配对95%区间支持增加；未作多重检验校正",
+        "evidence": {
+          "tests": [
+            {
+              "test": "G2_rebuild_cost_and_time",
+              "passed": true,
+              "G0_equivalent": 1869.3600000000001,
+              "G2_equivalent": 1905.4,
+              "G0_seconds": 64.1600000000004,
+              "G2_seconds": 64.80777777777817
+            },
+            {
+              "test": "G1_increase_power_loss_seconds",
+              "passed": true,
+              "G0_minus_G1_ci_low": -455.34605555566753,
+              "G0_minus_G1_ci_high": -286.33815277785465,
+              "pairs": 30
+            },
+            {
+              "test": "G1_increase_blocked_seconds",
+              "passed": true,
+              "G0_minus_G1_ci_low": -11219.48581945221,
+              "G0_minus_G1_ci_high": -8398.99723610615,
+              "pairs": 30
+            }
+          ],
+          "missing": []
+        }
+      },
+      "B": {
+        "status": "证据不足",
+        "reason": "G2重建当量与时间同时增加，或G1缺电/堵塞的配对95%区间支持增加；未作多重检验校正",
+        "evidence": {
+          "tests": [],
+          "missing": [
+            "G2/G0 stage sample size",
+            "G1/G0 stage sample size"
+          ]
+        }
+      },
+      "C": {
+        "status": "证据不足",
+        "reason": "G2重建当量与时间同时增加，或G1缺电/堵塞的配对95%区间支持增加；未作多重检验校正",
+        "evidence": {
+          "tests": [],
+          "missing": [
+            "G2/G0 stage sample size",
+            "G1/G0 stage sample size"
+          ]
+        }
+      }
+    },
+    "synergy": {
+      "status": "证据不足",
+      "reason": "G1/G2/G3全21档、每档20个有效种子的扫描尚未完成",
+      "evidence": {}
+    }
+  }
+}

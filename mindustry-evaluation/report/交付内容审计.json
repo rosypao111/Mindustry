@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "final_execution": false,
+  "source_paths": 6253,
+  "distinct_code_contents": 142,
+  "source_path_hashes_checked": 14,
+  "exact_blueprint_orders": 1672,
+  "actual_G0_winning_example_stages": 6,
+  "attempt_evidence_rows": 3147,
+  "report_links_checked": 194,
+  "token_and_monetary_unknowns_explicit": true,
+  "nonformal_trials_not_added_to_formal_N": true,
+  "scope": "Expanded report coverage, saved sources, exact blueprints, real G0 examples, cost honesty and final matrix gate; not a replacement for native gameplay audits"
+}
